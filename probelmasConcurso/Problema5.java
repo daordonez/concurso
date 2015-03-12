@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 public class Problema5 {
     public static void main(String[] args) {
 
