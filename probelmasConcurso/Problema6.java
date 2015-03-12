@@ -1,10 +1,7 @@
 
-public class Menor233 {
 
-
-
+public class Problema6 {
     public static void main(String[] args) {
-
 
     }
 }
