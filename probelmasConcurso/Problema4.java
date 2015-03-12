@@ -14,6 +14,8 @@ public class Problema4 {
 
         int N = tec.nextInt();
 
+        boolean flag = false;
+
         if(M%2!=0){
             for(int i=0; i<M; i++){
                 if(i%2==0 || i==0){
@@ -26,13 +28,27 @@ public class Problema4 {
                 }
                 else{
                     for (int j = 0; j < N; j++) {
-                        if(j<(N-1)){
-                            System.out.print(".");
+                        if (flag == false){
+                            if(j<(N-1)){
+                                System.out.print(".");
+                            }
+                            if(j==(N-1)){
+                                System.out.print("#");
+                            }
+                            flag = true;
+                        }else {
+                            if (j == 0){
+                                System.out.print("#");
+                            }else {
+                                System.out.print(".");
+
+                            }
+                            flag = false;
+
                         }
-                        if(j==(N-1)){
-                            System.out.println("#");
-                        }
+
                     }
+                    System.out.println();
                 }
 
             }
