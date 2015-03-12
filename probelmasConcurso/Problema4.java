@@ -16,7 +16,8 @@ public class Problema4 {
 
         boolean flag = false;
 
-        if(M%2!=0){
+        if(M%2 != 0){
+
             for(int i=0; i<M; i++){
                 if(i%2==0 || i==0){
                     for (int j = 0; j < N; j++) {
@@ -28,14 +29,17 @@ public class Problema4 {
                 }
                 else{
                     for (int j = 0; j < N; j++) {
+
                         if (flag == false){
-                            if(j<(N-1)){
-                                System.out.print(".");
-                            }
-                            if(j==(N-1)){
+
+                            if (j == N - 1){
                                 System.out.print("#");
+                            }else {
+                                System.out.print(".");
+
                             }
                             flag = true;
+
                         }else {
                             if (j == 0){
                                 System.out.print("#");
