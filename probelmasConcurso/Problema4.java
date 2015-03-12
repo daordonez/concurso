@@ -1,8 +1,47 @@
-
-import java.util.*;
+import java.util.Scanner;
 
 public class Problema4 {
+
+
+    static Scanner tec = new Scanner(System.in);
+
+    //Problema H
     public static void main(String[] args) {
 
+
+        int M = tec.nextInt();
+
+
+        int N = tec.nextInt();
+
+        if(M%2!=0){
+            for(int i=0; i<M; i++){
+                if(i%2==0 || i==0){
+                    for (int j = 0; j < N; j++) {
+                        System.out.print("#");
+                    }
+                    System.out.println("");
+
+
+                }
+                else{
+                    for (int j = 0; j < N; j++) {
+                        if(j<(N-1)){
+                            System.out.print(".");
+                        }
+                        if(j==(N-1)){
+                            System.out.println("#");
+                        }
+                    }
+                }
+
+            }
+        }
+
     }
+
 }
+
+
+
+
